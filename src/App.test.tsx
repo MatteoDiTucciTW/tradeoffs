@@ -7,7 +7,3 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
-
-it("fails on purpose to check continuous integration pipeline", () => {
-  expect(1).toEqual(2)
-});
