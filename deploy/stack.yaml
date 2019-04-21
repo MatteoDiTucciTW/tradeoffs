@@ -168,6 +168,9 @@ Resources:
             build:
               commands:
                 - echo Build started on `date`
+                - echo Run tests
+                - npm run test
+                - echo Build
                 - npm run build
             post_build:
               commands:
