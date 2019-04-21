@@ -168,6 +168,9 @@ Resources:
             build:
               commands:
                 - echo Build started on `date`
+                - echo Run tests
+                - yarn test
+                - echo Build
                 - yarn run build
             post_build:
               commands:
