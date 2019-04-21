@@ -164,14 +164,11 @@ Resources:
             pre_build:
               commands:
                 - echo Installing source NPM dependencies...
-                - yarn install
+                - npm install
             build:
               commands:
                 - echo Build started on `date`
-                - echo Run tests
-                - yarn test
-                - echo Build
-                - yarn run build
+                - npm run build
             post_build:
               commands:
                 - aws s3 cp --recursive --acl public-read ./build s3://${DeployBucket}/
