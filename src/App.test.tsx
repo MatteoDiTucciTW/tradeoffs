@@ -11,11 +11,3 @@ it('renders without crashing', () => {
     ReactDOM.render(<App/>, div);
     ReactDOM.unmountComponentAtNode(div);
 });
-
-it("has a greeting for UPC in the title", () => {
-    const app = shallow(<App/>);
-
-    const titleText = app.find("p#title").text();
-
-    expect(titleText).toEqual("Hola UPC");
-});
